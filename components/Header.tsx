@@ -28,6 +28,7 @@ export default function Header() {
     { name: "Industries", href: "#industries" },
     { name: "How It Works", href: "#process" },
     { name: "Contact", href: "#contact" },
+    { name: "Test Page", href: "/test" },
   ];
 
   return (

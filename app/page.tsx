@@ -40,6 +40,8 @@ export default function Home() {
       <main>
         <Hero />
         <Features />
+        {/* We're using the Industries component for now, but we also have 
+            a test page available at /test for industry-specific demo calls */}
         <Industries />
         <Process />
         <Contact />

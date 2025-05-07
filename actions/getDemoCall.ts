@@ -3,6 +3,8 @@
 
 import { cookies } from "next/headers";
 
+type IndustryType = "real-estate" | "healthcare" | "recruitment" | string;
+
 interface DemoCallResult {
   success: boolean;
   error?: string;
@@ -12,6 +14,7 @@ interface DemoCallResult {
 // run server-side code directly from components
 export async function getDemoCall(
   phoneNumber: string,
+  industry?: IndustryType
 ): Promise<DemoCallResult> {
   // Validate phone number format for UAE
   const uaePhoneRegex = /^(\+971|00971|0)?(?:[567]\d{8}|5[0-9]{7})$/;
@@ -50,8 +53,9 @@ export async function getDemoCall(
       },
       body: JSON.stringify({ 
         phoneNumber,
+        industry, // Include the industry parameter
         callType: 'demo',
-        callScript: 'introduction'
+        callScript: industry ? `${industry}-intro` : 'introduction' // Use industry-specific script
       }),
     });
 
@@ -67,6 +71,11 @@ export async function getDemoCall(
 
     // For demonstration purposes, we'll simulate an API delay
     await new Promise((resolve) => setTimeout(resolve, 1500));
+
+    // Log industry selection (would be sent to API in production)
+    if (industry) {
+      console.log(`Demo call for industry: ${industry}`);
+    }
 
     // Set cookie to prevent abuse
     cookieStore.set("lastDemoCall", new Date().toISOString(), {

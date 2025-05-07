@@ -18,7 +18,7 @@ const buttonStyles = {
     link: "text-primary hover:underline underline-offset-4 hover:text-primary/80",
     gradient: "bg-gradient-main text-white shadow-lg hover:shadow-primary/30 hover:translate-y-[-2px]",
     glow: "bg-primary text-white shadow-glow animate-border-glow hover:translate-y-[-2px] hover:shadow-glow-lg",
-    'outline-glow': "border border-primary/30 bg-card/50 text-white shadow-primary/20 hover:border-primary/50 hover:shadow-glow hover:text-primary",
+    'outline-glow': "border border-primary/30 bg-pink-950/50 text-white shadow-primary/20 hover:border-primary/50 hover:shadow-glow hover:text-primary",
     'neo': "neo-brutalism text-white",
     glass: "glass-card text-white hover:bg-card/70",
   },

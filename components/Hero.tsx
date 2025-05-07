@@ -256,7 +256,7 @@ export default function Hero() {
                     >
                       <div className="flex flex-col sm:flex-row gap-4">
                         <div className="flex-1 relative">
-                          <div className="absolute left-4 top-1/2 -translate-y-1/2 text-primary">
+                          <div className="absolute z-10 left-4 top-1/2 -translate-y-1/2 text-primary">
                             <PhoneIcon className="h-5 w-5" />
                           </div>
                           <label htmlFor="phone" className="sr-only">
@@ -289,23 +289,23 @@ export default function Hero() {
                 </motion.div>
 
                 <div className="mt-8 flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-8">
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.7 }}
-                  >
-                    <Button 
-                      asChild 
-                      variant="outline-glow" 
-                      size="lg"
-                      className="group w-full sm:w-auto"
-                    >
-                      <Link href="#contact" className="flex items-center">
-                        <span>Schedule Consultation</span>
-                        <ChevronRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                      </Link>
-                    </Button>
-                  </motion.div>
+                  {/* <motion.div */}
+                  {/*   initial={{ opacity: 0, y: 20 }} */}
+                  {/*   animate={{ opacity: 1, y: 0 }} */}
+                  {/*   transition={{ delay: 0.7 }} */}
+                  {/* > */}
+                  {/*   <Button  */}
+                  {/*     asChild  */}
+                  {/*     variant="outline-glow"  */}
+                  {/*     size="lg" */}
+                  {/*     className="group w-full sm:w-auto" */}
+                  {/*   > */}
+                  {/*     <Link href="#contact" className="flex items-center"> */}
+                  {/*       <span>Schedule Consultation</span> */}
+                  {/*       <ChevronRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" /> */}
+                  {/*     </Link> */}
+                  {/*   </Button> */}
+                  {/* </motion.div> */}
 
                   <motion.div
                     initial={{ opacity: 0 }}

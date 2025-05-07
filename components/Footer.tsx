@@ -96,7 +96,7 @@ export default function Footer() {
       </div>
       
       {/* Scroll to top button */}
-      <div className="absolute right-8 -top-6 z-10">
+      <div className="absolute right-8 top-10 z-50">
         <motion.button
           onClick={scrollToTop}
           className="glass-card shadow-primary/20 border border-white/10 rounded-xl p-3 text-foreground hover:text-primary transition-all duration-300"

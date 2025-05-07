@@ -202,7 +202,7 @@ export default function Contact() {
           </motion.div>
           
           <motion.h2 
-            className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-6"
+            className="text-3xl leading-[1.5] sm:text-4xl lg:text-5xl font-bold tracking-tight mb-6"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
@@ -494,7 +494,7 @@ export default function Contact() {
                             <span className="ml-1 text-primary">*</span>
                           </label>
                           <div className="relative">
-                            <div className="absolute left-4 top-1/2 -translate-y-1/2 text-white/50">
+                            <div className="absolute z-10 left-4 top-1/2 -translate-y-1/2 text-white/50">
                               <Mail className="h-4 w-4" />
                             </div>
                             <input
@@ -544,7 +544,7 @@ export default function Contact() {
                             <span className="ml-1 text-primary">*</span>
                           </label>
                           <div className="relative">
-                            <div className="absolute left-4 top-1/2 -translate-y-1/2 text-white/50">
+                            <div className="absolute z-10 left-4 top-1/2 -translate-y-1/2 text-white/50">
                               <Phone className="h-4 w-4" />
                             </div>
                             <input
@@ -596,7 +596,7 @@ export default function Contact() {
                             <span className="ml-1 text-primary">*</span>
                           </label>
                           <div className="relative">
-                            <div className="absolute left-4 top-1/2 -translate-y-1/2 text-white/50">
+                            <div className="absolute z-10 left-4 top-1/2 -translate-y-1/2 text-white/50">
                               <Building className="h-4 w-4" />
                             </div>
                             <input
@@ -792,7 +792,7 @@ export default function Contact() {
           </motion.div>
 
           {/* Contact information and benefits */}
-          <SlideUp delay={0.3} className="space-y-8">
+          <SlideUp delay={0.3} className="space-y-8 lg:col-span-2">
             {/* Benefits */}
             <Card className="border border-border/50 bg-card/80 backdrop-blur-sm hover:shadow-lg transition-all duration-300">
               <CardHeader>

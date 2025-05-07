@@ -98,20 +98,6 @@ const FeatureCard = ({ icon: Icon, title, description, benefits, index, isPrimar
             ))}
           </ul>
         </CardContent>
-        
-        <CardFooter className="pt-3">
-          <Button 
-            asChild 
-            variant={isPrimary ? "default" : "outline"}
-            size="sm"
-            className={`group ${isPrimary ? 'w-full justify-center' : ''}`}
-          >
-            <Link href="#contact">
-              <span>{isPrimary ? 'Get Started' : 'Learn More'}</span>
-              <ChevronRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
-            </Link>
-          </Button>
-        </CardFooter>
       </Card>
     </motion.div>
   );
@@ -129,7 +115,7 @@ const FEATURES = [
       "Higher response rates than international numbers",
       "Improved customer trust from first contact"
     ],
-    isPrimary: false
+    isPrimary: true
   },
   {
     icon: MessageSquare,
@@ -141,7 +127,7 @@ const FEATURES = [
       "Natural conversation flow with pauses and intonation",
       "Personalized voice styles to match your brand"
     ],
-    isPrimary: false
+    isPrimary: true
   },
   {
     icon: Globe,
@@ -153,7 +139,7 @@ const FEATURES = [
       "Cultural nuances and regional dialects",
       "Seamless language switching during calls"
     ],
-    isPrimary: false
+    isPrimary: true
   },
   {
     icon: Zap,
@@ -165,7 +151,7 @@ const FEATURES = [
       "No capacity limitations during peak times",
       "Predictable pricing even at high volumes"
     ],
-    isPrimary: false
+    isPrimary: true
   },
   {
     icon: Users,
@@ -177,7 +163,7 @@ const FEATURES = [
       "Consistent brand representation",
       "Quick turnaround on new voice creation"
     ],
-    isPrimary: false
+    isPrimary: true
   },
   {
     icon: Radio,
@@ -189,7 +175,7 @@ const FEATURES = [
       "Send documents and media to prospects",
       "Continue conversations on preferred channels"
     ],
-    isPrimary: false
+    isPrimary: true
   },
 ];
 

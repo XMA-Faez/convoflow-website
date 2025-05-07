@@ -60,9 +60,6 @@
   .bg-destructive {
     @apply bg-[#9f1239];
   }
-  .bg-black {
-    @apply bg-black;
-  }
   .bg-gradient-dark {
     @apply bg-[#12121f];
   }
